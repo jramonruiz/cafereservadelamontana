@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Café Reserva de la Montaña | Chiapas</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93') center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.6);
+    }
+
+    .hero-content { position: relative; z-index: 2; }
+
+    .btn-main {
+      background: #6f4e37;
+      color: white;
+      border-radius: 30px;
+      padding: 10px 25px;
+    }
+
+    .btn-main:hover { background: #5a3e2b; }
+
+    .section-title {
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .gallery img {
+      border-radius: 12px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .3s;
+    }
+
+    .gallery img:hover { transform: scale(1.05); }
+
+    .impact {
+      background: #f8f5f2;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <span class="navbar-brand fw-bold">Café Reserva de la Montaña</span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-content">
+    <h1 class="fw-bold display-5">Café auténtico de Chiapas</h1>
+    <p>De las montañas a tu taza</p>
+    <a href="#impacto" class="btn btn-main mt-3">Conoce más</a>
+  </div>
+</section>
+
+<!-- HISTORIA -->
+<section class="container py-5">
+  <h2 class="text-center section-title">Nuestra esencia</h2>
+  <p class="text-center">
+    En Café Reserva de la Montaña cultivamos más que café: cultivamos historia, comunidad y tradición.
+    Cada grano representa el esfuerzo de familias productoras de Chiapas.
+  </p>
+</section>
+
+<!-- GALERÍA -->
+<section class="container py-5">
+  <h2 class="text-center section-title">Nuestro café</h2>
+  <div class="row g-3 gallery">
+    <div class="col-md-6">
+      <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348">
+    </div>
+    <div class="col-md-6">
+      <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0">
+    </div>
+    <div class="col-md-4">
+      <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085">
+    </div>
+    <div class="col-md-4">
+      <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735">
+    </div>
+    <div class="col-md-4">
+      <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31">
+    </div>
+  </div>
+</section>
+
+<!-- BENEFICIOS -->
+<section class="bg-light py-5">
+  <div class="container text-center">
+    <h2 class="section-title">¿Por qué elegirnos?</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <h5>🌱 Natural</h5>
+        <p>Cultivo tradicional sin procesos industriales.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>☕ Calidad</h5>
+        <p>Sabor auténtico de Chiapas.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>🤝 Comunidad</h5>
+        <p>Apoyas directamente a productores locales.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IMPACTO -->
+<section id="impacto" class="impact py-5">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <div class="col-md-6">
+        <img src="https://images.unsplash.com/photo-1507914372368-b2b085b925a1" class="img-fluid rounded">
+      </div>
+
+      <div class="col-md-6">
+        <h2 class="section-title">Tu compra transforma vidas</h2>
+        <p>
+          Cada taza de Café Reserva de la Montaña apoya directamente a familias productoras.
+        </p>
+        <p>
+          Tu elección mejora sus ingresos y ayuda a preservar una tradición cafetalera única.
+        </p>
+        <p>
+          No es solo café, es impacto real en comunidades de Chiapas.
+        </p>
+        <a href="#" class="btn btn-main">Quiero apoyar</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="container text-center py-5">
+  <h2 class="section-title">Descubre el sabor de la montaña</h2>
+  <p>Forma parte de esta historia desde el primer sorbo, habla con nosotros</p>
+  <div id="tawk-container" style="height:500px;"></div>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center">
+  <p>© 2026 Café Reserva de la Montaña | Chiapas, México</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- TAWK.TO CHAT -->
+ <!--Start of Tawk.to Script-->
+<script>
+var Tawk_API=Tawk_API||{};
+var Tawk_LoadStart=new Date();
+
+Tawk_API.embedded = 'tawk-container';
+
+(function(){
+var s1=document.createElement("script");
+var s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6221a9b31ffac05b1d7ce24d/1jm9308jt';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<script type="text/javascript">
+/*
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6221a9b31ffac05b1d7ce24d/1jm9308jt';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+*/
+</script>
+<!--End of Tawk.to Script-->
+
+</body>
+</html>
